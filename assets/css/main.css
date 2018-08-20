@@ -271,8 +271,8 @@ section {
     z-index: -1;
     display: block;
     left: 0;
-    bottom: -55px;
-    height: 220px;
+    bottom: -60px;
+    height: 230px;
     width: 450px;
     background: #C5D773; }
 
@@ -309,7 +309,7 @@ section {
 
 .welcome {
   display: flex;
-  margin-top: 225px; }
+  margin: 240px 0 20px; }
   .welcome .left {
     flex: 1;
     background-image: url("../images/autumn.png");
@@ -383,7 +383,7 @@ section {
 
 .contact {
   padding: 125px 0 0 0;
-  margin: 100px 0 0;
+  margin: 150px 0 0;
   background-image: url("../images/mi-outline.png");
   background-repeat: no-repeat;
   background-size: 250px;
@@ -436,7 +436,7 @@ section {
   padding: 200px 0 50px 0; }
 
 .faqs {
-  padding: 150px 0 100px;
+  padding: 150px 0 120px;
   width: 95%;
   max-width: 800px;
   margin: 0 auto; }

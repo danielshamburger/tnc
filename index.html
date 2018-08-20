@@ -7,8 +7,11 @@
   <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/rellax.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -41,19 +44,19 @@
     </div>
     <div class="hero-main-content">
       <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-      <div class="hero-overlay">
-        <h5>Welcome to the</h5>
-        <h2>Great<br /> Lake<br /> State</h2>
+      <div class="hero-overlay rellax" data-rellax-speed="-1" data-aos="fade-in" data-aos-delay="200">
+        <h5 data-aos="fade-left" data-aos-delay="300">Welcome to the</h5>
+        <h2 data-aos="fade-left" data-aos-delay="500">Great<br /> Lake<br /> State</h2>
       </div>
     </div>
     <div id="play-button">
       <img src="assets/images/play.svg" alt="Play" />
       <div class="rotated-text">Watch a dope video</div>
     </div>
-    <div class="green-block"></div>
+    <div class="green-block rellax" data-rellax-speed="-1"></div>
   </section>
   <section class="welcome">
-    <div class="left">
+    <div data-aos="fade-right" class="left">
     </div>
     <div class="center">
       <div class="rotated-text">The North Coast</div>
@@ -62,7 +65,7 @@
       <a class="button" href="#">Learn More</a>
     </div>
     <div class="right">
-      <img src="assets/images/welcome-to-mi.png" alt="" />
+      <img class="rellax" data-rellax-speed="-1" src="assets/images/welcome-to-mi.png" alt="" />
     </div>
   </section>
   <section class="slider">
@@ -99,26 +102,24 @@
   <section class="faqs">
     <p class="rotated-text">Have a question?</p>
     <h2>FAQ's</h2>
-    <button class="accordion"><h4>Who Is TNC?</h4> <span class="control-label"></span></button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non purus vitae lacus facilisis lobortis. Praesent ornare sollicitudin laoreet. Etiam id nisl volutpat, ornare ex id, rutrum nisl. Integer posuere molestie ipsum, eu tincidunt ante finibus et. Ut auctor hendrerit felis sit amet gravida. Suspendisse pulvinar, elit vitae viverra ornare, felis nisi feugiat mi, eget egestas neque nibh eget enim. Aliquam scelerisque fermentum metus, vel tristique ipsum ornare sed.</p>
-</div>
-
-<button class="accordion"><h4>Why Are We Awesome?</h4> <span class="control-label"></span></button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non purus vitae lacus facilisis lobortis. Praesent ornare sollicitudin laoreet. Etiam id nisl volutpat, ornare ex id, rutrum nisl. Integer posuere molestie ipsum, eu tincidunt ante finibus et. Ut auctor hendrerit felis sit amet gravida. Suspendisse pulvinar, elit vitae viverra ornare, felis nisi feugiat mi, eget egestas neque nibh eget enim. Aliquam scelerisque fermentum metus, vel tristique ipsum ornare sed.</p>
-</div>
-
-<button class="accordion"><h4>What Do People Usually Ask About?</h4> <span class="control-label"></span></button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non purus vitae lacus facilisis lobortis. Praesent ornare sollicitudin laoreet. Etiam id nisl volutpat, ornare ex id, rutrum nisl. Integer posuere molestie ipsum, eu tincidunt ante finibus et. Ut auctor hendrerit felis sit amet gravida. Suspendisse pulvinar, elit vitae viverra ornare, felis nisi feugiat mi, eget egestas neque nibh eget enim. Aliquam scelerisque fermentum metus, vel tristique ipsum ornare sed.</p>
-</div>
+    <button data-aos="fade-up" class="accordion"><h4>Who Is TNC?</h4> <span class="control-label"></span></button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non purus vitae lacus facilisis lobortis. Praesent ornare sollicitudin laoreet. Etiam id nisl volutpat, ornare ex id, rutrum nisl. Integer posuere molestie ipsum, eu tincidunt ante finibus et. Ut auctor hendrerit felis sit amet gravida. Suspendisse pulvinar, elit vitae viverra ornare, felis nisi feugiat mi, eget egestas neque nibh eget enim. Aliquam scelerisque fermentum metus, vel tristique ipsum ornare sed.</p>
+    </div>
+    <button data-aos="fade-up" data-aos-delay="200" class="accordion"><h4>Why Are We Awesome?</h4> <span class="control-label"></span></button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non purus vitae lacus facilisis lobortis. Praesent ornare sollicitudin laoreet. Etiam id nisl volutpat, ornare ex id, rutrum nisl. Integer posuere molestie ipsum, eu tincidunt ante finibus et. Ut auctor hendrerit felis sit amet gravida. Suspendisse pulvinar, elit vitae viverra ornare, felis nisi feugiat mi, eget egestas neque nibh eget enim. Aliquam scelerisque fermentum metus, vel tristique ipsum ornare sed.</p>
+    </div>
+    <button data-aos="fade-up" data-aos-delay="400" class="accordion"><h4>What Do People Usually Ask About?</h4> <span class="control-label"></span></button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non purus vitae lacus facilisis lobortis. Praesent ornare sollicitudin laoreet. Etiam id nisl volutpat, ornare ex id, rutrum nisl. Integer posuere molestie ipsum, eu tincidunt ante finibus et. Ut auctor hendrerit felis sit amet gravida. Suspendisse pulvinar, elit vitae viverra ornare, felis nisi feugiat mi, eget egestas neque nibh eget enim. Aliquam scelerisque fermentum metus, vel tristique ipsum ornare sed.</p>
+    </div>
   </section>
   <section class="featured">
     <div class="left">
-      <img class="rocks-image" src="assets/images/rocks.png" alt="Rocks in hand" />
-      <div class="black-block"></div>
-      <img class="waterfall-image" src="assets/images/waterfall-2.png" alt="Waterfall" />
+      <img class="rocks-image" data-aos="fade-right" src="assets/images/rocks.png" alt="Rocks in hand" />
+      <div class="black-block" data-aos="fade-right" data-aos-delay="200"></div>
+      <img class="waterfall-image" data-aos="fade-right" data-aos-delay="400" src="assets/images/waterfall-2.png" alt="Waterfall" />
     </div>
     <div class="right">
       <h2>Pure <br />Michigan</h2>
@@ -129,7 +130,7 @@
   <section class="contact">
     <div class="rotated-text">Wanna work with us?</div>
     <img class="sunset-image" src="assets/images/forest-sunset.png" alt="Sunset" />
-    <div class="white-box">
+    <div class="white-box" data-aos="fade-up">
       <h2>Let's Talk</h2>
       <a class="button" href="#">Learn More</a>
     </div>
@@ -139,11 +140,11 @@
     </div>
   </section>
   <section class="subscribe">
-    <form action="" class="newsletter">
+    <form data-aos="fade-up" action="" class="newsletter">
       <label for="email">Stay up to date</label>
       <input type="email" name="email" placeholder="Email Signup"></input>
     </form>
-    <h6>Have questions? Call (555) 123-2728</h6>
+    <h6 data-aos="fade-up" data-aos-delay="500">Have questions? Call (555) 123-2728</h6>
   </section>
   <footer class="site-footer">
     <div class="social-links">
@@ -162,6 +163,15 @@
   <script>
     swiperInit();
     faqAccordion();
+    AOS.init();
+
+    var rellax = new Rellax('.rellax', {
+      // center: true
+      callback: function(position) {
+          // callback every position change
+          // console.log(position);
+      }
+    });
   </script>
 </body>
 </html>
