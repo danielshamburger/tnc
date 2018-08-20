@@ -1,0 +1,83 @@
+// _slider.sass
+
+.swiper-container
+  width: 100%
+  height: 600px
+  background-image: url('../images/bridge.png')
+  background-size: cover
+  background-position: center calc(100% - 60px)
+  background-repeat: no-repeat
+.swiper-slide
+  // font-size: 18px
+  background: transparent
+  /* Center slide text vertically */
+  display: -webkit-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-box-pack: flex-end
+  -ms-flex-pack: flex-end
+  -webkit-justify-content: flex-end
+  justify-content: flex-end
+  -webkit-box-align: center
+  -ms-flex-align: center
+  -webkit-align-items: center
+  align-items: center
+  width: 85%
+  max-width: 1000px
+  margin: 0 auto
+  .description
+    background: $color_primary
+    position: relative
+    color: #fff
+    font-size: 15px
+    line-height: 2
+    padding: 20px 25px
+    margin: 0 -50px 110px 0
+    max-width: 350px
+    align-self: flex-end
+  img
+    height: 85%
+    align-self: flex-end
+    box-shadow: 0px 2px 6px -1px #666
+    margin-bottom: 5px
+.swiper-button-next
+  bottom: 33px
+  left: 42px
+  top: auto
+  background-image: url('../images/next.png')
+  background-size: 20px
+  background-position: center center
+  padding: 3px 8px
+  transition: background-color .15 ease
+  background-color: #bbb
+  &:hover
+    background-color: #aaa
+  &.swiper-button-disabled
+    opacity: 1
+.swiper-button-prev
+  bottom: 33px
+  left: 0
+  top: auto
+  background-image: url('../images/prev.png')
+  background-size: 20px
+  background-position: center center
+  padding: 3px 8px
+  transition: background-color .15 ease
+  background-color: #bbb
+  &:hover
+    background-color: #aaa
+  &.swiper-button-disabled
+    opacity: 1
+.swiper-container-vertical>.swiper-pagination-bullets
+  top: auto
+  right: auto
+  bottom: 55px
+  left: 38px
+  text-indent: -9999px
+.swiper-pagination-bullet
+  border: 2px solid #fff
+  opacity: 1
+  &.swiper-pagination-bullet-active
+    border-color: $color_primary
+    background-color: $color_primary

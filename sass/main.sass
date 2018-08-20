@@ -1,0 +1,430 @@
+// main.sass
+
+@import 'variables'
+@import 'slider'
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700i|Open+Sans')
+
+body
+  font-family: 'Montserrat'
+a
+  text-decoration: none
+h2
+  font-style: italic
+  text-transform: uppercase
+  font-size: 50px
+  line-height: 1
+p
+  line-height: 1.8
+  font-family: 'Open Sans'
+  color: #555
+  margin-bottom: 30px
+.button
+  color: #000
+  border: 2px solid
+  text-transform: uppercase
+  padding: 12px 30px
+  font-size: 15px
+  display: inline-block
+  font-weight: 600
+  transition: .2s all
+  &:hover
+    color: #fff
+    background: #000
+    border-color: #000
+.rotated-text
+  text-align: center
+  line-height: 1
+  font-weight: 500
+  color: #aaa
+  font-size: 12px
+  text-transform: uppercase
+
+header.site-header
+  display: flex
+  .hamburger-menu
+    width: 50px
+    padding: 20px
+    img
+      height: 35px
+      display: block
+      margin: 0 auto
+  .header-content
+    display: flex
+    justify-content: space-between
+    width: 95%
+    .site-branding
+      padding: 20px 20px 20px 0
+      img
+        height: 35px
+    .header-right
+      display: flex
+      padding-right: 2%
+      flex: 2
+      justify-content: flex-end
+      nav.main-menu
+        ul
+          list-style: none
+          margin: 0
+          padding: 0
+          li
+            display: inline-block
+            margin: 0
+            padding: 0
+            a
+              display: block
+              text-decoration: none
+              text-transform: uppercase
+              font-size: 15px
+              color: #999
+              line-height: 39px
+              padding: 20px 15px
+              font-weight: 500
+              transition: color .2s ease
+              &:hover
+                color: #000
+      .search
+        width: 50px
+        display: block
+        cursor: pointer
+        img
+          width: 15px
+          display: block
+          margin: 32px auto 0
+        &:hover
+          svg
+            fill: #000
+section
+  width: 100%
+  position: relative
+  clear: both
+  &:after
+    content: ''
+    visibility: hidden
+    display: block
+    height: 0
+    clear: both
+.hero
+  position: relative
+  display: flex
+  .left-gap
+    width: 95px
+    /* display: flex; */
+    position: relative
+    justify-content: center
+    align-items: center
+    a
+      display: inline-block
+      width: 200px
+      height: 25px
+      top: 0
+      left: 0
+      text-decoration: none
+      color: #aaa
+      position: absolute
+      transform: rotate(-90deg) translateX(-100%) translateY(-48px)
+      transition: color .2s ease
+      &:hover
+        color: #000
+  .hero-main-content
+    background-image: url('../images/hero.png')
+    width: 100%
+    background-size: cover
+    background-position: center center
+    height: 75vh
+    min-height: 400px
+    display: flex
+    justify-content: center
+    align-items: center
+    iframe
+      display: none
+      width: 560px
+      height: 315px
+  #play-button
+    position: absolute
+    cursor: pointer
+    bottom: 166px
+    right: 235px
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+    img
+      position: absolute
+      top: 0
+      left: calc(50% - 22px)
+      width: 43px
+    .rotated-text
+      transform: rotate(-90deg) translateX(-120px)
+      color: $color_secondary
+  .hero-overlay
+    position: absolute
+    background: rgba(30, 30, 30, .8)
+    right: 0
+    bottom: 15%
+    padding: 2px 40px 5px 25px
+    h5
+      color: $color_primary
+      letter-spacing: 1px
+      font-size: 18px
+      text-transform: uppercase
+      margin: 0
+      position: relative
+      line-height: 0
+      top: -2px
+      left: -55px
+    h2
+      color: #fff
+      text-align: right
+      font-size: 55px
+      line-height: 1
+      margin: 0
+      text-transform: uppercase
+      font-style: italic
+      font-weight: 700
+  .green-block
+    position: absolute
+    z-index: -1
+    display: block
+    left: 0
+    bottom: -55px
+    height: 220px
+    width: 450px
+    background: $color_secondary
+.site-footer
+  background: #222
+  color: #fff
+  font-size: 12px
+  letter-spacing: 1px
+  text-transform: uppercase
+  text-align: center
+  padding: 25px
+  font-family: 'Open Sans'
+  a
+    text-decoration: none
+    color: #fff
+  .social-links
+    display: block
+    margin: 10px 0 20px 0
+    a
+      display: inline-block
+      margin: 0 6px
+      img
+        display: block
+        height: 16px
+  .copyright
+    display: block
+    margin: 20px 0
+  .footer-links
+    display: block
+    margin: 20px 0
+    a
+      display: inline-block
+      margin: 0 10px
+.welcome
+  display: flex
+  margin-top: 225px
+  .left
+    flex: 1
+    background-image: url('../images/autumn.png')
+    background-position: right top
+    background-repeat: no-repeat
+    background-size: auto
+  .center
+    flex: 1.5
+    padding: 0 125px 100px 50px
+    position: relative
+    .rotated-text
+      position: absolute
+      display: block
+      width: 180px
+      height: 15px
+      line-height: 1
+      text-align: center
+      top: 0
+      left: 0
+      transform: rotate(-90deg) translateX(40px) translateY(-32px)
+    h2
+      color: $color_primary
+  .right
+    flex: .75
+    background-image: url('../images/campfire.png')
+    background-position: left top
+    background-repeat: no-repeat
+    background-size: 400px
+    position: relative
+    img
+      position: absolute
+      top: 20px
+      left: -90px
+      display: block
+      width: 200px
+.featured
+  display: flex
+  padding: 50px 0
+  .left
+    flex: 4
+    position: relative
+    .rocks-image
+      position: absolute
+      top: 0
+      left: 0
+      width: 45%
+      z-index: 3
+      display: block
+    .black-block
+      background: #000
+      position: absolute
+      top: 6%
+      width: 70%
+      height: 0
+      padding-bottom: 67%
+      display: block
+      z-index: -1
+    .waterfall-image
+      position: absolute
+      z-index: 2
+      display: block
+      width: 75%
+      top: 15%
+      left: 15%
+  .right
+    flex: 3
+    padding: 0 10% 0 0
+  h2
+    color: $color_secondary
+.contact
+  padding: 125px 0 0 0
+  margin: 100px 0 0
+  background-image: url('../images/mi-outline.png')
+  background-repeat: no-repeat
+  background-size: 250px
+  background-position: calc(50% + 360px) 280px
+  .rotated-text
+    display: block
+    margin: 0 auto
+    width: 180px
+    height: 15px
+    line-height: 1
+    text-align: center
+    transform: rotate(-90deg)
+  .sunset-image
+    display: block
+    margin: 100px auto 0
+    width: 45%
+  .white-box
+    background: rgba(255, 255, 255, .85)
+    display: block
+    text-align: center
+    margin: -92px auto -92px
+    padding: 40px
+    position: relative
+    max-width: 300px
+    h2
+      color: $color_primary
+      margin: 0 0 20px 0
+  .two-images
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    .waterfalls-image
+      width: 40%
+      height: auto
+      object-fit: contain
+      display: block
+      margin: 12px
+    .kayaks-image
+      width: 34%
+      height: auto
+      object-fit: contain
+      display: block
+      margin: 12px
+.slider
+  background-image: url('../images/earth-pattern.png')
+  background-position: right top
+  background-size: 330px
+  background-repeat: no-repeat
+  padding: 200px 0 50px 0
+.faqs
+  padding: 150px 0 100px
+  width: 95%
+  max-width: 800px
+  margin: 0 auto
+  h2
+    text-align: center
+    text-transform: none
+    color: $color_primary
+    margin: 100px 0 35px 0
+  .rotated-text
+    display: block
+    margin: 0 auto
+    line-height: 1
+    text-align: center
+    transform: rotate(-90deg)
+  .accordion
+    background-color: #eee
+    color: #444
+    cursor: pointer
+    padding: 18px
+    width: 100%
+    border: none
+    text-align: left
+    outline: none
+    font-size: 15px
+    transition: 0.4s
+    display: flex
+    justify-content: space-between
+    align-items: center
+    h4
+      color: $color_primary
+      text-transform: uppercase
+      margin: 0
+      font-weight: 700
+    .control-label
+      &:after
+        content: 'View'
+        color: #777
+        text-transform: uppercase
+        font-size: 13px
+  .accordion:hover
+    background-color: #ddd
+  .active
+    .control-label
+      &:after
+        content: 'Close'
+  .panel
+    padding: 8px 70px
+    background-color: white
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    p
+      margin: 30px 0 40px
+.subscribe
+  background-image: url('../images/faded-tree-background.png')
+  background-size: cover
+  background-position: center top
+  text-align: center
+  padding: 25% 0 10%
+  form.newsletter
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 35px
+    label
+      text-transform: uppercase
+      font-size: 22px
+      font-weight: 600
+      color: #333
+      margin-right: 40px
+    input
+      font-size: 15px
+      font-weight: 500
+      border: 0
+      outline: 0
+      padding: 10px
+  h6
+    margin: 0
+    text-transform: uppercase
+    color: #333
+    font-size: 18px
+    font-weight: 600
